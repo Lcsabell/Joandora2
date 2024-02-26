@@ -1,0 +1,53 @@
+﻿@charset "utf-8";
+
+/* 초기화 */
+* { box-sizing: border-box; }
+body, h1, h2, h3, ul, p, figure { margin:0; padding: 0; }
+li { list-style: none; }
+a { text-decoration: none; }
+address { font-style: normal; }
+hr { display: none; }
+.hidden { position: absolute; width: 1px; height: 1px; margin: -1px; clip: rect(0 0 0 0); 
+        overflow: hidden; }
+/* 초기화 끝 */
+
+/* 전체영역, 웹 폰트 */
+@font-face { font-family: "jalnan2";
+             src: url(../font/Jalnan2TTF.ttf), 
+                  url(../font/Jalnan2TTF.woff); font-weight: normal; }
+@font-face { font-family: "jeju";
+             src: url(../font/JejuGothic.ttf),
+                  url(../font/JejuGothic.woff); }
+body { font-family: "jeju"; }
+/* 전체영역 끝 */
+
+/* 헤더영역 시작 */
+#header { position: relative;  height: 600px; background: url(../images/minku-kang-MeBZxHkSS24-unsplash.jpg) no-repeat center / cover;
+          color: white; text-align: center;}
+#header hgroup { padding-top: 250px; }
+#header hgroup h1 { font-family: "jalnanGothic"; text-shadow: 1px 2px 1px #000; 
+                    font-size: 70px; }
+#header hgroup p { margin-top: 30px; text-shadow: 0 2px 1px #000; }
+/* 헤더영역 끝 */
+
+/* GNB 시작 */
+#gnb { width: 1000px; position: absolute; top: 570px; left: calc(50% - 500px); }
+#gnb ul { display: flex; }
+#gnb ul li { width: 25%; float: left; }
+#gnb ul li a { width: 100%; display: block; background: #036; color: #fff;
+               text-align: center; line-height: 60px; }
+#gnb ul li a:hover { background: #fff; color: #000; font-weight: bold; }
+/* GNB 끝 */
+
+/* 본문 시작 */
+main { width: 1000px; margin: 0 auto; background: #d5e093; padding: 50px 12px 0;
+       box-sizing: border-box; }
+#content article h3 { margin: 25px 0 15px;  }
+#content article figure { padding: 0 0 13px 40px; }
+/* 본문 끝 */
+
+/* 푸터 시작 */
+#footer { /* height: 100px; */ padding: 20px 0;
+           background: #030; color: white; text-align: center; font-size: 14px; }
+#footer p {  /* padding: 20px 0 15px; */  margin-bottom: 15px; }
+/* 푸터 끝 */
